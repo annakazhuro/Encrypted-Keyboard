@@ -132,6 +132,27 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		039F515B22D7C77000B5E68A /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				039F514B22D7BD4C00B5E68A /* MainScreen */,
+				039F515222D7BD6700B5E68A /* CipherInfoScreen */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		039F515C22D7C77B00B5E68A /* KeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				03EE8CF322D79BAD00917621 /* AppDelegate.swift */,
+				03EE8CF522D79BAD00917621 /* ViewController.swift */,
+				03EE8CFA22D79BB200917621 /* Assets.xcassets */,
+				03EE8CFC22D79BB200917621 /* LaunchScreen.storyboard */,
+				039F515922D7BD7300B5E68A /* bg.JPG */,
+			);
+			path = KeyboardExtension;
+			sourceTree = "<group>";
+		};
 		03EE8CE722D79BAD00917621 = {
 			isa = PBXGroup;
 			children = (
@@ -153,14 +174,9 @@
 		03EE8CF222D79BAD00917621 /* KeyboardExtension */ = {
 			isa = PBXGroup;
 			children = (
-				039F515222D7BD6700B5E68A /* CipherInfoScreen */,
-				039F514B22D7BD4C00B5E68A /* MainScreen */,
-				03EE8CF322D79BAD00917621 /* AppDelegate.swift */,
-				03EE8CF522D79BAD00917621 /* ViewController.swift */,
-				03EE8CFA22D79BB200917621 /* Assets.xcassets */,
-				03EE8CFC22D79BB200917621 /* LaunchScreen.storyboard */,
+				039F515B22D7C77000B5E68A /* Group */,
+				039F515C22D7C77B00B5E68A /* KeyboardExtension */,
 				03EE8CFF22D79BB200917621 /* Info.plist */,
-				039F515922D7BD7300B5E68A /* bg.JPG */,
 			);
 			path = KeyboardExtension;
 			sourceTree = "<group>";

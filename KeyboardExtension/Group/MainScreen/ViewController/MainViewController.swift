@@ -10,22 +10,30 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // - IBAction
+    
     @IBAction func nextScreen(_ sender: UIButton) {
-        didLoadNewScreen()
+        willLoadNewScreen()
     }
+    
+    // - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+}
+
+// MARK: - Configure
+
+extension MainViewController {
     
-    func didLoadNewScreen() {
+    func willLoadNewScreen() {
         let storyboard = UIStoryboard(name: Storyboard.cipherInfo.rawValue, bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! cipherInfoViewController
         self.present(vc, animated: true, completion: nil)
     }
-}
-
-enum Storyboard: String {
-    case cipherInfo = "cipherInfo"
+    
+    enum Storyboard: String {
+        case cipherInfo = "cipherInfo"
+    }
 }
