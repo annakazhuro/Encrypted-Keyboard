@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NEh-fm-HnQ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cipher Info View Controller-->
+        <scene sceneID="fit-l9-pop">
+            <objects>
+                <viewController id="NEh-fm-HnQ" customClass="cipherInfoViewController" customModule="keyboardExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ll-uv-dqd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alphabet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-be-DaR">
+                                <rect key="frame" x="5" y="64" width="404" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yiz-ot-zTN">
+                                <rect key="frame" x="45" y="120" width="324" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yiz-ot-zTN" firstAttribute="leading" secondItem="oAs-q6-bUd" secondAttribute="leading" constant="45" id="0Pg-Xa-PlF"/>
+                            <constraint firstItem="oAs-q6-bUd" firstAttribute="trailing" secondItem="Yiz-ot-zTN" secondAttribute="trailing" constant="45" id="0TO-wu-KBn"/>
+                            <constraint firstItem="fzQ-be-DaR" firstAttribute="leading" secondItem="oAs-q6-bUd" secondAttribute="leading" constant="5" id="4Aq-NX-S2N"/>
+                            <constraint firstItem="Yiz-ot-zTN" firstAttribute="top" secondItem="fzQ-be-DaR" secondAttribute="bottom" constant="20" id="aWd-cp-0RF"/>
+                            <constraint firstItem="fzQ-be-DaR" firstAttribute="top" secondItem="oAs-q6-bUd" secondAttribute="top" constant="20" id="oaN-Jy-pmH"/>
+                            <constraint firstItem="oAs-q6-bUd" firstAttribute="trailing" secondItem="fzQ-be-DaR" secondAttribute="trailing" constant="5" id="xQM-zi-l2Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oAs-q6-bUd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAB-Mh-46Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="-300"/>
+        </scene>
+    </scenes>
+</document>
