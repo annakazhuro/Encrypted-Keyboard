@@ -49,6 +49,7 @@ class KeyboardViewController: UIInputViewController {
         super.viewDidLoad()
         
         configureUIButtons()
+        hideKeyboard()
     }
     
     override func viewWillLayoutSubviews() {
@@ -65,8 +66,29 @@ class KeyboardViewController: UIInputViewController {
         for button in keyButtons {
             button.layer.cornerRadius = 5
             button.layer.borderWidth = 0.2
+            button.layer.shadowColor = UIColor.lightGray.cgColor
+            button.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            button.layer.masksToBounds = false
+            button.layer.shadowOpacity = 1.0
+            button.layer.shadowRadius = 0.0
         }
     }
+    
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissTheKeyboard))
+        tap.numberOfTapsRequired = 2
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissTheKeyboard()
+    {
+        dismissKeyboard()
+    }
+    
 }
 
 
