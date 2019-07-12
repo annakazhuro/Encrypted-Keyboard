@@ -10,9 +10,13 @@ import UIKit
 
 class cipherInfoViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleLabel.attributedText = NSAttributedString(string: "Краткое описание шифра", attributes:
+            [.underlineStyle: NSUnderlineStyle.single.rawValue])
     }
 
 }

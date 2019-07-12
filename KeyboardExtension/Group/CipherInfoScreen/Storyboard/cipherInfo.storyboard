@@ -22,7 +22,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6jJ-gb-3bP">
                                 <rect key="frame" x="5" y="59" width="365" height="250"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Краткое описание шифра" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-be-DaR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-be-DaR">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="37"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="31"/>
                                         <nil key="textColor"/>
@@ -34,7 +34,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="Чтобы подключить клавиатуру, перейдите в:">
                                                 <attributes>
-                                                    <font key="NSFont" size="24" name="Helvetica"/>
+                                                    <font key="NSFont" size="22" name="Helvetica"/>
                                                     <font key="NSOriginalFont" size="24" name="Helvetica"/>
                                                 </attributes>
                                             </fragment>
@@ -52,7 +52,7 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-LV-sfz">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your ciepher here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-LV-sfz">
                                         <rect key="frame" x="0.0" y="220" width="365" height="30"/>
                                         <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
@@ -65,28 +65,34 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="E3D-oE-EIg">
-                                <rect key="frame" x="25" y="334" width="345" height="20.666666666666686"/>
+                                <rect key="frame" x="25" y="334" width="345" height="24.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo0-Mw-joc">
-                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="20.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="24.333333333333332"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Привет">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name="Helvetica"/>
-                                                    <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
+                                                    <font key="NSOriginalFont" size="21" name="Helvetica-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" -">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="  ">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name="Arial-BoldMT"/>
+                                                    <font key="NSFont" size="21" name="Helvetica"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="\&gt;&lt;/">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                                    <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                                    <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                                    <font key="NSOriginalFont" size="21" name="Arial-BoldMT"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -94,17 +100,31 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOb-64-EWy">
-                                        <rect key="frame" x="172.66666666666663" y="0.0" width="172.33333333333337" height="20.666666666666668"/>
+                                        <rect key="frame" x="172.66666666666663" y="0.0" width="172.33333333333337" height="24.333333333333332"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Как дела  ">
+                                            <fragment content="Как дела">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
+                                                    <font key="NSOriginalFont" size="21" name="Helvetica-Light"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
-                                            <fragment content="?_?">
+                                            <fragment content=" -">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="??/">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                                    <font key="NSOriginalFont" size="20" name="Arial-BoldMT"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -114,15 +134,23 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cee-gc-0RD">
-                                <rect key="frame" x="25" y="373.33333333333331" width="345" height="21.333333333333314"/>
+                                <rect key="frame" x="25" y="366.33333333333331" width="345" height="25.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKW-tz-6ND">
-                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="21.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="25.333333333333332"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Где ты">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
+                                                    <font key="NSOriginalFont" size="21" name="Helvetica-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" -">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -130,7 +158,7 @@
                                             </fragment>
                                             <fragment content="  ">
                                                 <attributes>
-                                                    <font key="NSFont" size="12" name="Courier"/>
+                                                    <font key="NSFont" size="19" name="HelveticaNeue"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -138,8 +166,8 @@
                                             </fragment>
                                             <fragment content="&gt;&gt;?">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                                    <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                                    <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                                    <font key="NSOriginalFont" size="21" name="Arial-BoldMT"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -149,12 +177,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfH-PM-GfK">
-                                        <rect key="frame" x="172.66666666666663" y="0.0" width="172.33333333333337" height="21.333333333333332"/>
+                                        <rect key="frame" x="172.66666666666663" y="0.0" width="172.33333333333337" height="25.333333333333332"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Устал">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
+                                                    <font key="NSOriginalFont" size="21" name="Helvetica-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" -">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -168,18 +204,10 @@
                                                     </paragraphStyle>
                                                 </attributes>
                                             </fragment>
-                                            <fragment content=" ">
+                                            <fragment content="\__">
                                                 <attributes>
-                                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="\_\">
-                                                <attributes>
-                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                                    <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                                    <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                                    <font key="NSOriginalFont" size="21" name="Arial-BoldMT"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -191,14 +219,23 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="elj-Sm-9BO">
-                                <rect key="frame" x="25" y="402.66666666666669" width="350" height="21.333333333333314"/>
+                                <rect key="frame" x="25" y="399.66666666666669" width="350" height="25.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Th-U4-CCc">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="21.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="25.333333333333332"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Кофе">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
+                                                    <font key="NSOriginalFont" size="21" name="Helvetica-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" -">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -214,8 +251,8 @@
                                             </fragment>
                                             <fragment content="\_/&gt;">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                                    <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                                    <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                                    <font key="NSOriginalFont" size="21" name="Arial-BoldMT"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -225,23 +262,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdx-9T-3Cd">
-                                        <rect key="frame" x="175" y="0.0" width="175" height="21.333333333333332"/>
+                                        <rect key="frame" x="175" y="0.0" width="175" height="25.333333333333332"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Пора за работу">
+                                            <fragment content="За работу">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                                    <font key="NSFont" size="21" name="Helvetica-Light"/>
+                                                    <font key="NSOriginalFont" size="21" name="Helvetica-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
-                                            <fragment content="   ">
+                                            <fragment content=" -  ">
                                                 <attributes>
                                                     <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
-                                            <fragment content="&gt;_\\">
+                                            <fragment content="_\\">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                                    <font key="NSOriginalFont" size="18" name="Arial-BoldMT"/>
+                                                    <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                                    <font key="NSOriginalFont" size="21" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -259,7 +299,7 @@
                             <constraint firstItem="6jJ-gb-3bP" firstAttribute="top" secondItem="oAs-q6-bUd" secondAttribute="top" constant="15" id="aKD-BE-a1Q"/>
                             <constraint firstItem="oAs-q6-bUd" firstAttribute="trailing" secondItem="elj-Sm-9BO" secondAttribute="trailing" id="bGe-4h-nLm"/>
                             <constraint firstItem="elj-Sm-9BO" firstAttribute="top" secondItem="cee-gc-0RD" secondAttribute="bottom" constant="8" id="frh-6b-A2p"/>
-                            <constraint firstItem="cee-gc-0RD" firstAttribute="top" secondItem="E3D-oE-EIg" secondAttribute="bottom" constant="18.5" id="g5d-j3-mQ4"/>
+                            <constraint firstItem="cee-gc-0RD" firstAttribute="top" secondItem="E3D-oE-EIg" secondAttribute="bottom" constant="8" id="g5d-j3-mQ4"/>
                             <constraint firstItem="E3D-oE-EIg" firstAttribute="top" secondItem="oAs-q6-bUd" secondAttribute="top" constant="290" id="mFP-vp-JnM"/>
                             <constraint firstItem="oAs-q6-bUd" firstAttribute="trailing" secondItem="6jJ-gb-3bP" secondAttribute="trailing" constant="5" id="rKK-dA-Gpf"/>
                             <constraint firstItem="E3D-oE-EIg" firstAttribute="leading" secondItem="oAs-q6-bUd" secondAttribute="leading" constant="25" id="wgh-TS-Gdd"/>
@@ -267,10 +307,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oAs-q6-bUd"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="fzQ-be-DaR" id="aGz-Ud-UZO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAB-Mh-46Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="321.73913043478262" y="-300"/>
+            <point key="canvasLocation" x="320.80000000000001" y="-300"/>
         </scene>
     </scenes>
 </document>
