@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		039F515022D7BD4C00B5E68A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039F514D22D7BD4C00B5E68A /* Main.storyboard */; };
 		039F515122D7BD4C00B5E68A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F514F22D7BD4C00B5E68A /* MainViewController.swift */; };
-		039F515722D7BD6700B5E68A /* cipherInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039F515422D7BD6700B5E68A /* cipherInfo.storyboard */; };
-		039F515822D7BD6700B5E68A /* cipherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F515622D7BD6700B5E68A /* cipherInfoViewController.swift */; };
+		039F515722D7BD6700B5E68A /* CipherInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039F515422D7BD6700B5E68A /* CipherInfo.storyboard */; };
+		039F515822D7BD6700B5E68A /* CipherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F515622D7BD6700B5E68A /* CipherInfoViewController.swift */; };
 		039F515A22D7BD7400B5E68A /* bg.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 039F515922D7BD7300B5E68A /* bg.JPG */; };
 		03E90C6A22D8528F000EE9DA /* backspace_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E90C6822D8528E000EE9DA /* backspace_icon.png */; };
 		03E90C6B22D8528F000EE9DA /* globe_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E90C6922D8528F000EE9DA /* globe_icon.png */; };
+		03E90C7022D86648000EE9DA /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E90C6F22D86648000EE9DA /* StoryboardExtension.swift */; };
+		03E90C7222D86713000EE9DA /* StoryboardEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E90C7122D86713000EE9DA /* StoryboardEnum.swift */; };
 		03EE8CF422D79BAD00917621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE8CF322D79BAD00917621 /* AppDelegate.swift */; };
 		03EE8CF622D79BAD00917621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE8CF522D79BAD00917621 /* ViewController.swift */; };
 		03EE8CFB22D79BB200917621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EE8CFA22D79BB200917621 /* Assets.xcassets */; };
@@ -51,11 +53,13 @@
 /* Begin PBXFileReference section */
 		039F514D22D7BD4C00B5E68A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		039F514F22D7BD4C00B5E68A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		039F515422D7BD6700B5E68A /* cipherInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = cipherInfo.storyboard; sourceTree = "<group>"; };
-		039F515622D7BD6700B5E68A /* cipherInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cipherInfoViewController.swift; sourceTree = "<group>"; };
+		039F515422D7BD6700B5E68A /* CipherInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CipherInfo.storyboard; sourceTree = "<group>"; };
+		039F515622D7BD6700B5E68A /* CipherInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherInfoViewController.swift; sourceTree = "<group>"; };
 		039F515922D7BD7300B5E68A /* bg.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.JPG; sourceTree = "<group>"; };
 		03E90C6822D8528E000EE9DA /* backspace_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backspace_icon.png; sourceTree = "<group>"; };
 		03E90C6922D8528F000EE9DA /* globe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_icon.png; sourceTree = "<group>"; };
+		03E90C6F22D86648000EE9DA /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		03E90C7122D86713000EE9DA /* StoryboardEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardEnum.swift; sourceTree = "<group>"; };
 		03EE8CF022D79BAD00917621 /* KeyboardExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EE8CF322D79BAD00917621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03EE8CF522D79BAD00917621 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,7 +127,7 @@
 		039F515322D7BD6700B5E68A /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				039F515422D7BD6700B5E68A /* cipherInfo.storyboard */,
+				039F515422D7BD6700B5E68A /* CipherInfo.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -131,7 +135,7 @@
 		039F515522D7BD6700B5E68A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				039F515622D7BD6700B5E68A /* cipherInfoViewController.swift */,
+				039F515622D7BD6700B5E68A /* CipherInfoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -153,8 +157,35 @@
 				03EE8CFA22D79BB200917621 /* Assets.xcassets */,
 				03EE8CFC22D79BB200917621 /* LaunchScreen.storyboard */,
 				039F515922D7BD7300B5E68A /* bg.JPG */,
+				03E90C6822D8528E000EE9DA /* backspace_icon.png */,
+				03E90C6922D8528F000EE9DA /* globe_icon.png */,
 			);
 			path = KeyboardExtension;
+			sourceTree = "<group>";
+		};
+		03E90C6C22D86610000EE9DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				03E90C6D22D8661C000EE9DA /* Extensions */,
+				03E90C6E22D86624000EE9DA /* Enums */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		03E90C6D22D8661C000EE9DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03E90C6F22D86648000EE9DA /* StoryboardExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03E90C6E22D86624000EE9DA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				03E90C7122D86713000EE9DA /* StoryboardEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		03EE8CE722D79BAD00917621 = {
@@ -180,6 +211,7 @@
 			children = (
 				039F515B22D7C77000B5E68A /* Group */,
 				039F515C22D7C77B00B5E68A /* KeyboardExtension */,
+				03E90C6C22D86610000EE9DA /* Core */,
 				03EE8CFF22D79BB200917621 /* Info.plist */,
 			);
 			path = KeyboardExtension;
@@ -191,8 +223,6 @@
 				03EE8D1522D79D6900917621 /* Keyboard.storyboard */,
 				03EE8D0B22D79BD200917621 /* KeyboardViewController.swift */,
 				03EE8D0D22D79BD200917621 /* Info.plist */,
-				03E90C6822D8528E000EE9DA /* backspace_icon.png */,
-				03E90C6922D8528F000EE9DA /* globe_icon.png */,
 			);
 			path = EncryptedKeyboard;
 			sourceTree = "<group>";
@@ -281,7 +311,7 @@
 				039F515A22D7BD7400B5E68A /* bg.JPG in Resources */,
 				03EE8CFE22D79BB200917621 /* LaunchScreen.storyboard in Resources */,
 				03EE8CFB22D79BB200917621 /* Assets.xcassets in Resources */,
-				039F515722D7BD6700B5E68A /* cipherInfo.storyboard in Resources */,
+				039F515722D7BD6700B5E68A /* CipherInfo.storyboard in Resources */,
 				039F515022D7BD4C00B5E68A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,8 +335,10 @@
 			files = (
 				03EE8CF622D79BAD00917621 /* ViewController.swift in Sources */,
 				03EE8D1922D7A8B500917621 /* KeyboardViewController.swift in Sources */,
-				039F515822D7BD6700B5E68A /* cipherInfoViewController.swift in Sources */,
+				03E90C7222D86713000EE9DA /* StoryboardEnum.swift in Sources */,
+				039F515822D7BD6700B5E68A /* CipherInfoViewController.swift in Sources */,
 				03EE8CF422D79BAD00917621 /* AppDelegate.swift in Sources */,
+				03E90C7022D86648000EE9DA /* StoryboardExtension.swift in Sources */,
 				039F515122D7BD4C00B5E68A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

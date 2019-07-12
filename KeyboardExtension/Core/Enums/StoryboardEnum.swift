@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+enum Storyboard: String {
+    
+    // - Chipher Info
+    case cipherInfo = "CipherInfo"
+    
+    var filename: String {
+        return rawValue
+    }
+}

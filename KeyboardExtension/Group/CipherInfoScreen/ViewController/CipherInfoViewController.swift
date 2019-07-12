@@ -10,13 +10,29 @@ import UIKit
 
 class cipherInfoViewController: UIViewController {
 
+    // - IBOutlet
+    
     @IBOutlet weak var titleLabel: UILabel!
+    
+    // - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        titleLabel.attributedText = NSAttributedString(string: "Краткое описание шифра", attributes:
-            [.underlineStyle: NSUnderlineStyle.single.rawValue])
+        configure()
     }
 
+}
+
+// MARK: - Congigure
+
+extension cipherInfoViewController {
+    
+    func configure() {
+        configureTitleLabel()
+    }
+    
+    func configureTitleLabel() {
+        titleLabel.attributedText = NSAttributedString(string: "Краткое описание шифра", attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
+    }
+    
 }

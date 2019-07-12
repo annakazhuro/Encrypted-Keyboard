@@ -28,12 +28,8 @@ class MainViewController: UIViewController {
 extension MainViewController {
     
     func willLoadNewScreen() {
-        let storyboard = UIStoryboard(name: Storyboard.cipherInfo.rawValue, bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as! cipherInfoViewController
+        let vc = UIStoryboard(storyboard: .cipherInfo).instantiateInitialViewController() as! cipherInfoViewController
         self.present(vc, animated: true, completion: nil)
     }
     
-    enum Storyboard: String {
-        case cipherInfo = "cipherInfo"
-    }
 }

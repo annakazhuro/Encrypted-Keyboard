@@ -47,9 +47,8 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configureUIButtons()
-        hideKeyboard()
+        configure()
+        dismissTheKeyboard()
     }
     
     override func viewWillLayoutSubviews() {
@@ -61,7 +60,17 @@ class KeyboardViewController: UIInputViewController {
     
     override func textDidChange(_ textInput: UITextInput?) {
     }
+    
+}
 
+// MARK: - Configure
+
+extension KeyboardViewController {
+    
+    func configure() {
+        configureUIButtons()
+    }
+    
     func configureUIButtons() {
         for button in keyButtons {
             button.layer.cornerRadius = 5
@@ -74,21 +83,16 @@ class KeyboardViewController: UIInputViewController {
         }
     }
     
-    func hideKeyboard()
-    {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(dismissTheKeyboard))
-        tap.numberOfTapsRequired = 2
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
+}
+
+// MARK: - Dismiss keyboard
+
+extension KeyboardViewController {
     
-    @objc func dismissTheKeyboard()
-    {
-        dismissKeyboard()
+    func dismissTheKeyboard() {
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        swipeDown.direction = .down
+        self.view.addGestureRecognizer(swipeDown)
     }
     
 }
-
-
