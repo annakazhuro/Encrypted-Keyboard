@@ -39,6 +39,8 @@ class KeyboardViewController: UIInputViewController {
         super.updateViewConstraints()
     }
     
+    // - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

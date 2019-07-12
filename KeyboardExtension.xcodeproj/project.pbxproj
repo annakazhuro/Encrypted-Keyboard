@@ -12,6 +12,8 @@
 		039F515722D7BD6700B5E68A /* cipherInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039F515422D7BD6700B5E68A /* cipherInfo.storyboard */; };
 		039F515822D7BD6700B5E68A /* cipherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F515622D7BD6700B5E68A /* cipherInfoViewController.swift */; };
 		039F515A22D7BD7400B5E68A /* bg.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 039F515922D7BD7300B5E68A /* bg.JPG */; };
+		03E90C6A22D8528F000EE9DA /* backspace_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E90C6822D8528E000EE9DA /* backspace_icon.png */; };
+		03E90C6B22D8528F000EE9DA /* globe_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E90C6922D8528F000EE9DA /* globe_icon.png */; };
 		03EE8CF422D79BAD00917621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE8CF322D79BAD00917621 /* AppDelegate.swift */; };
 		03EE8CF622D79BAD00917621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE8CF522D79BAD00917621 /* ViewController.swift */; };
 		03EE8CFB22D79BB200917621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EE8CFA22D79BB200917621 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		039F515422D7BD6700B5E68A /* cipherInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = cipherInfo.storyboard; sourceTree = "<group>"; };
 		039F515622D7BD6700B5E68A /* cipherInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cipherInfoViewController.swift; sourceTree = "<group>"; };
 		039F515922D7BD7300B5E68A /* bg.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.JPG; sourceTree = "<group>"; };
+		03E90C6822D8528E000EE9DA /* backspace_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backspace_icon.png; sourceTree = "<group>"; };
+		03E90C6922D8528F000EE9DA /* globe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_icon.png; sourceTree = "<group>"; };
 		03EE8CF022D79BAD00917621 /* KeyboardExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EE8CF322D79BAD00917621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03EE8CF522D79BAD00917621 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				03EE8D1522D79D6900917621 /* Keyboard.storyboard */,
 				03EE8D0B22D79BD200917621 /* KeyboardViewController.swift */,
 				03EE8D0D22D79BD200917621 /* Info.plist */,
+				03E90C6822D8528E000EE9DA /* backspace_icon.png */,
+				03E90C6922D8528F000EE9DA /* globe_icon.png */,
 			);
 			path = EncryptedKeyboard;
 			sourceTree = "<group>";
@@ -284,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E90C6A22D8528F000EE9DA /* backspace_icon.png in Resources */,
 				03EE8D1622D79D6900917621 /* Keyboard.storyboard in Resources */,
+				03E90C6B22D8528F000EE9DA /* globe_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
