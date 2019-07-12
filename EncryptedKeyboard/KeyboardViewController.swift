@@ -10,6 +10,10 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
     
+    // - IBOutlet
+    
+    @IBOutlet var keyButtons: [UIButton]!
+    
     // - UITextDocumentProxy
     
     private var proxy: UITextDocumentProxy {
@@ -43,6 +47,8 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureUIButtons()
     }
     
     override func viewWillLayoutSubviews() {
@@ -55,4 +61,12 @@ class KeyboardViewController: UIInputViewController {
     override func textDidChange(_ textInput: UITextInput?) {
     }
 
+    func configureUIButtons() {
+        for button in keyButtons {
+            button.layer.cornerRadius = 5
+            button.layer.borderWidth = 0.2
+        }
+    }
 }
+
+

@@ -154,6 +154,17 @@
                         <viewLayoutGuide key="safeArea" id="ube-ZK-jDm"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="600" height="600"/>
+                    <connections>
+                        <outletCollection property="keyButtons" destination="1sk-bY-vhh" collectionClass="NSMutableArray" id="SZw-9i-Nl2"/>
+                        <outletCollection property="keyButtons" destination="yzR-d8-HNs" collectionClass="NSMutableArray" id="1Yr-RO-MuN"/>
+                        <outletCollection property="keyButtons" destination="oXJ-E3-vzv" collectionClass="NSMutableArray" id="hl1-d5-6pc"/>
+                        <outletCollection property="keyButtons" destination="9U2-1M-Zl9" collectionClass="NSMutableArray" id="S0H-OP-HaJ"/>
+                        <outletCollection property="keyButtons" destination="J0f-Qe-nc7" collectionClass="NSMutableArray" id="Oh9-og-RvG"/>
+                        <outletCollection property="keyButtons" destination="ONo-6W-K10" collectionClass="NSMutableArray" id="RD4-EM-I09"/>
+                        <outletCollection property="keyButtons" destination="6PT-90-Atf" collectionClass="NSMutableArray" id="nSz-5k-4Sj"/>
+                        <outletCollection property="keyButtons" destination="yA8-X9-5Cx" collectionClass="NSMutableArray" id="bza-4n-bVr"/>
+                        <outletCollection property="keyButtons" destination="cCJ-AJ-cz5" collectionClass="NSMutableArray" id="ZW3-bc-csn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp2-Tr-AAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
