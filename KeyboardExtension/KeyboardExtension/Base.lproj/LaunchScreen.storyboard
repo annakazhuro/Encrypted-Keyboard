@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,12 +15,12 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted Keyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu0-dh-oyU">
-                                <rect key="frame" x="5" y="304" width="404" height="43"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                <rect key="frame" x="5" y="229" width="310" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
                                 <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,8 +29,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Nu0-dh-oyU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="5kH-EQ-kC6"/>
+                            <constraint firstItem="Nu0-dh-oyU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5Zc-XF-d6w"/>
                             <constraint firstAttribute="trailing" secondItem="Nu0-dh-oyU" secondAttribute="trailing" constant="5" id="JHR-FC-bTN"/>
+                            <constraint firstItem="Nu0-dh-oyU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PxN-KS-pDs"/>
                             <constraint firstItem="Nu0-dh-oyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="fAU-w0-HKx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
